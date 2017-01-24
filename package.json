@@ -21,16 +21,24 @@
     "@angular/platform-browser-dynamic": "^2.4.4",
     "@angular/router": "^3.4.4",
     "core-js": "^2.4.1",
+    "milligram": "^1.2.4",
     "reflect-metadata": "^0.1.9",
-    "rxjs": "^5.0.0-beta.6",
+    "rxjs": "^5.0.3",
     "zone.js": "^0.7.6"
   },
   "devDependencies": {
+    "angular2-template-loader": "^0.6.0",
+    "css-loader": "^0.26.1",
     "html-webpack-plugin": "^2.17.0",
+    "node-sass": "^4.3.0",
+    "raw-loader": "^0.5.1",
+    "sass-loader": "^4.1.1",
+    "style-loader": "^0.13.1",
+    "to-string-loader": "^1.1.5",
     "ts-loader": "^0.8.2",
-    "typescript": "^1.8.10",
+    "typescript": "^2.1.5",
     "typings": "^1.0.4",
-    "webpack": "^1.13.1",
-    "webpack-dev-server": "^1.14.1"
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2"
   }
 }

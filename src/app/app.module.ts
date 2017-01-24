@@ -1,11 +1,12 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { HomeComponent } from './components/home.component';
+import { MainComponent } from './components/main/main.component.ts';
+import '../../node_modules/milligram/dist/milligram.min.css';
 
 @NgModule({
-    bootstrap: [ HomeComponent ],
+    bootstrap: [ MainComponent ],
     declarations: [
-        HomeComponent
+        MainComponent
     ],
     imports: [
         BrowserModule

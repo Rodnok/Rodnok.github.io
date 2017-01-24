@@ -9,7 +9,22 @@ module.exports = {
     },
     module: {
         loaders: [
-            {test: /\.ts$/, loader: 'ts'}
+            {
+                test: /\.ts$/,
+                loaders: ['ts', 'angular2-template-loader']
+            },
+            {
+                test: /\.scss$/,
+                loaders: ['to-string-loader', 'css-loader', 'sass-loader']
+            },
+            {
+                test: /\.css$/,
+                loaders: ['style-loader', 'css-loader']
+            },
+            {
+                test: /\.html$/,
+                loader: 'raw-loader'
+            }
         ]
     },
     resolve: {

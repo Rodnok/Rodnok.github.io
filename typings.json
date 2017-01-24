@@ -1,5 +1,6 @@
 {
   "globalDependencies": {
-    "core-js": "registry:dt/core-js#0.9.7+20161130133742"
+    "core-js": "registry:dt/core-js#0.9.7+20161130133742",
+    "requirejs": "registry:dt/requirejs#2.1.20+20160921164505"
   }
 }
