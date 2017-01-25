@@ -1,7 +1,131 @@
+$background: #f4f5f6;
+$border-color: #d1d1d1;
+$font-color: #606c76;
+$primary-color: #ca5a4d;
+
+@media (min-width: 40.0rem) {
+
+}
+
+@media (min-width: 80.0rem) {
+
+}
+
+@media (min-width: 120.0rem) {
+
+}
+
+a {
+  color: $primary-color;
+}
+
 .wrapper {
   width: 100%;
   position: relative;
-  background-color: yellowgreen;
   display: block;
   overflow: hidden;
+
+  .container {
+    max-width: 80rem;
+  }
+}
+
+.navigation {
+  background-color: $background;
+  border-bottom: .1rem solid $border-color;
+  display: block;
+  height: 5.2rem;
+  left: 0;
+  right: 0;
+  width: 100%;
+  top: 0;
+  max-width: 100%;
+  position: fixed;
+  z-index: 1;
+
+  .navigation-list {
+    list-style: none;
+    margin-bottom: 0;
+  }
+
+  .navigation-item {
+    float: left;
+    margin-bottom: 0;
+    margin-left: 2.5rem;
+    position: relative;
+  }
+
+  .navigation-link {
+    color: $primary-color;
+  }
+
+  .logo {
+    fill: $primary-color;
+    height: 2rem;
+    position: relative;
+    top: .3rem;
+
+    .st0 {
+      fill: $background;
+      stroke: $primary-color;
+      stroke-width: 3;
+    }
+
+    .st1 {
+      fill: $primary-color;
+      stroke-width: 3;
+      stroke: $primary-color;
+    }
+
+    .st2 {
+      fill: $primary-color;
+    }
+
+    .st3 {
+      fill: $background;
+    }
+  }
+}
+
+.navigation-title .title, .navigation-link {
+  display: inline;
+  font-size: 1.6rem;
+  line-height: 5.2rem;
+  padding: 0;
+  text-decoration: none;
+  color: $font-color;
+  position: relative;
+}
+
+.octocat {
+  border: 0;
+  height: 5.2rem;
+  position: fixed;
+  top: 0;
+  right: 0;
+  fill: $primary-color;
+
+  &:hover {
+    .octocat-arm {
+      animation: wave .5s infinite;
+      transform-origin: 13rem 10.6rem;
+    }
+  }
+}
+
+.octocat-arm {
+  fill: $background;
+}
+
+.octocat-body {
+  fill: $background;
+}
+
+@keyframes wave {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(25deg);
+  }
 }
