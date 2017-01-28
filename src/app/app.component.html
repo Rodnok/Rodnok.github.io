@@ -1,7 +1,7 @@
 <main class="wrapper">
     <nav class="navigation">
         <section class="container">
-            <a class="navigation-title" href="#">
+            <a class="navigation-title" [routerLink]="['./home']">
                 <svg viewBox="0 0 100 100" class="logo" version="1.1">
                     <path id="XMLID_10_" class="st0" d="M73,27c0,12.7-10.3,23-23,23S27,60.3,27,73s10.3,23,23,23C24.6,96,4,75.4,4,50C4,24.6,24.6,4,50,4C62.7,4,73,14.3,73,27z"></path>
                     <path id="XMLID_7_" class="st1" d="M96,50c0,25.4-20.6,46-46,46c-12.7,0-23-10.3-23-23s10.3-23,23-23s23-10.3,23-23S62.7,4,50,4C75.4,4,96,24.6,96,50z"></path>
@@ -15,6 +15,7 @@
                     <a class="navigation-link" href="#">
                         Projects
                     </a>
+                    <popover [items]="menuItems"></popover>
                 </li>
                 <li class="navigation-item">
                     <a class="navigation-link" href="#">

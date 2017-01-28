@@ -1,25 +1,29 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { NavigationComponent } from './components/navigation/navigation.component';
+import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { PokePowahComponent } from './components/poke-powah/poke-powah.component';
+import { WikisearchComponent } from './components/wikisearch/wikisearch.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
-import { RouterModule } from '@angular/router';
+import { PopoverComponent } from './components/popover/popover.component';
+import { RouterModule, PreloadAllModules } from '@angular/router';
 import { appRoutes } from './app.routes';
 import '../../node_modules/milligram/dist/milligram.min.css';
 import './global.css';
 
 @NgModule({
-    bootstrap: [ NavigationComponent ],
+    bootstrap: [ AppComponent ],
     declarations: [
-        NavigationComponent,
+        AppComponent,
         HomeComponent,
         PokePowahComponent,
-        NotFoundComponent
+        WikisearchComponent,
+        NotFoundComponent,
+        PopoverComponent
     ],
     imports: [
         BrowserModule,
-        RouterModule.forRoot(appRoutes)
+        RouterModule.forRoot(appRoutes, {useHash: true, preloadingStrategy: PreloadAllModules})
     ]
 })
 
