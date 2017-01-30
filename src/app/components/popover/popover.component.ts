@@ -4,13 +4,14 @@ import { Component, Input, OnInit } from '@angular/core';
     selector: 'popover',
     template: `
     <div (click)="triggerOpen($event)"><ng-content></ng-content></div>
-    <ul *ngIf="trigger">
+    <ul *ngIf="trigger" class="popover">
       <li *ngFor="let item of items"><a [routerLink]="item.link">{{item.name}}</a></li>
     </ul>
     `,
     host: {
         '(document: click)': 'onClick($event)'
-    }
+    },
+    styles: [require('./popover.component.scss')],
 })
 
 export class PopoverComponent implements OnInit {

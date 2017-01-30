@@ -1,10 +1,11 @@
-import { Component, Type } from '@angular/core';
+import { Component, Type, ViewEncapsulation } from '@angular/core';
 import { PopoverComponent } from './components/popover/popover.component';
 
 @Component({
     selector: 'my-app',
     templateUrl: './app.component.html',
-    styleUrls: ['./app.component.scss']
+    styles: [require('./app.component.scss')],
+    encapsulation: ViewEncapsulation.None
 })
 
 export class AppComponent extends Type {
