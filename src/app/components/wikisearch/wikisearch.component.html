@@ -1,10 +1,14 @@
-<h1>Wikipedia</h1>
-<input type="text" class="form-control"
-       placeholder="Search term" [formControl]="search">
-<div class="list" [style.display]="hasResults?'block':'none'">
-    <ul>
-        <li *ngFor="let result of results | async" class="result" (click)="open(result.url)">
-            {{result?.title}}
-        </li>
-    </ul>
+<div class="wrapper">
+    <div class="container">
+        <h1>Wiki search</h1>
+        <input type="text" class="form-control"
+               placeholder="Search term" [formControl]="search">
+        <div class="list" [style.display]="hasResults?'block':'none'">
+            <ul>
+                <li *ngFor="let result of results | async" class="result" (click)="open(result.url)">
+                    {{result?.title}}
+                </li>
+            </ul>
+        </div>
+    </div>
 </div>
