@@ -27,7 +27,7 @@ export class PokePowahComponent {
     };
 
     constructor(http: Http) {
-        let url = 'playground/' + require('./poke.json');
+        let url = require('./poke.json');
 
         http.get(url)
             .map(res => res.json())
