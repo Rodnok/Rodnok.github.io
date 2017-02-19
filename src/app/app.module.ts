@@ -2,7 +2,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule , ReactiveFormsModule } from '@angular/forms';
 import { RouterModule, PreloadAllModules } from '@angular/router';
-import { JsonpModule } from '@angular/http';
+import { JsonpModule, HttpModule } from '@angular/http';
+import { Ng2TableModule } from 'ng2-table/ng2-table';
 
 
 import { AppComponent } from './app.component';
@@ -30,6 +31,8 @@ import './global.css';
         FormsModule,
         ReactiveFormsModule,
         JsonpModule,
+        HttpModule,
+        Ng2TableModule,
         RouterModule.forRoot(appRoutes, {useHash: true, preloadingStrategy: PreloadAllModules})
     ]
 })

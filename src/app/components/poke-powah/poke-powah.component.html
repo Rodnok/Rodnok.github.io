@@ -1,0 +1,9 @@
+<div class="wrapper">
+    <div class="container">
+        <ng-table [config]="config"
+                  (tableChanged)="onChangeTable(config)"
+                  (cellClicked)="onCellClick($event)"
+                  [rows]="rows" [columns]="columns">
+        </ng-table>
+    </div>
+</div>

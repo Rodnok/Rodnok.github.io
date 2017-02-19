@@ -24,6 +24,11 @@ module.exports = {
             {
                 test: /\.html$/,
                 loader: 'raw-loader'
+            },
+            {
+                test: /\.json$/,
+                exclude: /node_modules/,
+                loader: 'file'
             }
         ]
     },

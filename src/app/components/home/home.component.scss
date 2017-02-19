@@ -1,0 +1,205 @@
+@import '../../variables';
+
+.pokemon-shadow svg, .pokemon-original svg {
+  display: none;
+}
+
+#pokemon-guess {
+  display: none;
+}
+
+#time-stamp {
+  display: none;
+  position: absolute;
+  font-size: 10rem;
+  left: 700px;
+  top: calc(50% - 5rem);
+}
+
+.title {
+  display: block;
+  text-align: center;
+  margin: 3rem;
+
+  .letter {
+    display: inline-block;
+    font-size: 4rem;
+  }
+}
+
+.input-wrapper {
+  margin: 3rem;
+
+  input {
+    width: 40rem;
+    display: block;
+    margin: 0 auto;
+
+    &:focus {
+      border-color: $primary-color;
+    }
+  }
+}
+
+#vulpix {
+  .st0{fill:#2A1B18;}
+  .st1{fill:#D38D79;}
+  .st2{fill:#E97963;}
+  .st3{fill:#AE4F57;}
+  .st4{fill:#B26A5E;}
+  .st5{fill:#824640;}
+  .st6{fill:#A05B52;}
+  .st7{fill:#EFE9D7;}
+  .st8{fill:#D5C5BF;}
+  .st9{fill:#E97863;}
+  .st10{fill:#834640;}
+  .st11{fill:#D38D78;}
+  .st12{fill:#A05A51;}
+  .st13{fill:#AC4F55;}
+  .st14{fill:#262423;}
+  .st15{fill:#291D19;}
+  .st16{fill:#281C19;}
+  .st17{fill:#F6F6F6;}
+  .st18{fill:#9C7864;}
+  .st19{fill:#B89780;}
+  .st20{fill:#FEFEFE;}
+  .st21{fill:#6A534A;}
+  .st22{fill:#675047;}
+  .st23{fill:#FDFDFD;}
+  .st24{fill:#9C7863;}
+  .st25{fill:#695249;}
+  .st26{fill:#644E45;}
+}
+
+#gloom {
+  .st0{fill:#7490C1;}
+  .st1{fill:#A44642;}
+  .st2{fill:#AA4646;}
+  .st3{fill:#DF452A;}
+  .st4{fill:#71302D;}
+  .st5{fill:#7590C1;}
+  .st6{fill:#753030;}
+  .st7{fill:#506484;}
+  .st8{fill:#DA6011;}
+  .st9{fill:#992F1D;}
+  .st10{fill:#F1B1A6;}
+  .st11{fill:#A1301E;}
+  .st12{fill:#FEFEFE;}
+  .st13{fill:#959493;}
+  .st14{fill:#D8E3ED;}
+  .st15{fill:#050505;}
+  .st16{fill:#DFD5C4;}
+  .st17{fill:#DED4C3;}
+  .st18{fill:#999286;}
+  .st19{fill:#DFD4C4;}
+  .st20{fill:#DED3C2;}
+  .st21{fill:#DFD4C3;}
+  .st22{fill:#AB87C7;}
+  .st23{fill:#D996A3;}
+}
+
+#bulbasaur {
+  .st0{fill:#1F1A17;}
+  .st1{fill:#A6A4A3;}
+  .st2{fill:#7DC7AB;}
+  .st3{fill:#79A65B;}
+  .st4{fill:#629089;}
+  .st5{fill:#4F7E42;}
+  .st6{fill:#62918A;}
+  .st7{fill:#9FD8C3;}
+  .st8{fill:#9AD5BF;}
+  .st9{fill:#4F7F42;}
+  .st10{fill:#338F8E;}
+  .st11{fill:#135655;}
+  .st12{fill:#7BC3A9;}
+  .st13{fill:#B8E2D3;}
+  .st14{fill:#9BBF81;}
+  .st15{fill:#A1D8C4;}
+  .st16{fill:#1A7271;}
+  .st17{fill:#83AE67;}
+  .st18{fill:#C5E8DC;}
+  .st19{fill:#6FA899;}
+  .st20{fill:#6FAB9A;}
+  .st21{fill:#8AB36E;}
+  .st22{fill:#70AD9B;}
+  .st23{fill:#ADDDCC;}
+  .st24{fill:#90B775;}
+  .st25{fill:#197170;}
+  .st26{fill:#97D2BC;}
+  .st27{fill:#55A9A8;}
+  .st28{fill:#6DA898;}
+  .st29{fill:#1B7372;}
+  .st30{fill:#91CAB6;}
+  .st31{fill:#9FD7C2;}
+  .st32{fill:#328B8A;}
+  .st33{fill:#74B5A0;}
+  .st34{fill:#196F6E;}
+  .st35{fill:#9CD6C1;}
+  .st36{fill:#A2C389;}
+  .st37{fill:#BAE3D4;}
+  .st38{fill:#CADBD7;}
+  .st39{fill:#A6C2BB;}
+  .st40{fill:#A6DAC7;}
+  .st41{fill:#CADCD7;}
+  .st42{fill:#CBDCD8;}
+  .st43{fill:#C0D4CF;}
+  .st44{fill:#72AD9C;}
+  .st45{fill:#B0CD9A;}
+  .st46{fill:#548345;}
+  .st47{fill:#A6C1BA;}
+  .st48{fill:#CFDEDA;}
+  .st49{fill:#AFC8C2;}
+  .st50{fill:#608E4C;}
+  .st51{fill:#1F1B18;}
+  .st52{fill:#23211A;}
+  .st53{fill:#292A1F;}
+  .st54{fill:#76B9A2;}
+  .st55{fill:#DD7F80;}
+  .st56{fill:#C6686E;}
+  .st57{fill:#AF505A;}
+  .st58{fill:#A94A56;}
+  .st59{fill:#4C3236;}
+  .st60{fill:#FCFCFC;}
+  .st61{fill:#FCFBFB;}
+  .st62{fill:#BD3D58;}
+  .st63{fill:#FEFEFE;}
+  .st64{fill:#CCDCE4;}
+  .st65{fill:#7B3750;}
+  .st66{fill:#7B374F;}
+  .st67{fill:#7A364F;}
+  .st68{fill:#CCDCE3;}
+  .st69{fill:#76354B;}
+  .st70{fill:#318C8B;}
+  .st71{fill:#318D8C;}
+  .st72{fill:#201B18;}
+}
+
+#slowpoke {
+  .st0{fill:#040000;}
+  .st1{fill:#F397BD;}
+  .st2{fill:#F1F5D0;}
+  .st3{fill:#FEFEFE;}
+  .st4{fill:#F1F8EE;}
+  .st5{fill:#620002;}
+  .st6{fill:#FDFDFD;}
+  .st7{fill:#FDFCFC;}
+  .st8{fill:#060201;}
+  .st9{fill:#070302;}
+  .st10{fill:#070303;}
+  .st11{fill:#080404;}
+}
+
+#pikachu {
+  .st0{fill:#F9D51F;}
+  .st1{fill:#E09622;}
+  .st2{fill:#801E08;}
+  .st3{fill:#FEFEFE;}
+  .st4{fill:#F52D13;}
+  .st5{fill:#010000;}
+  .st6{fill:#040400;}
+  .st7{fill:#F3D37A;}
+  .st8{fill:#EC5460;}
+  .st9{fill:#A71729;}
+  .st10{fill:#6F0B0A;}
+  .st11{fill:#FDFDFD;}
+}
