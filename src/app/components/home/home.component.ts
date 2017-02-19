@@ -112,7 +112,7 @@ export class HomeComponent {
     }
 
     onUpdate() {
-        
+
     }
 
 }
