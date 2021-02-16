@@ -1,0 +1,2 @@
+# Rodnok.github.io
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/4b36b71d642f487bb45695d6bbacfdc8)](https://www.codacy.com/app/Rodnok/Rodnok-github-io?utm_source=github.com&utm_medium=referral&utm_content=Rodnok/Rodnok.github.io&utm_campaign=badger)
